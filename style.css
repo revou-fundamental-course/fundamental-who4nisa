@@ -1,5 +1,68 @@
-/* tes git */
-/* ada perubahann */
-/* komen */
-/* ini komen */ 
-/* komen lagi */
+main{
+    padding: 32px;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-icon{
+    height: 50px;
+    width: 50px;
+
+    /* imege icon */
+    background-image: url(https://picsum.photos/seed/picsum/100/100);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+nav>a{
+    padding-left: 32px;
+    padding-right: 32px;
+    border: 1px solid;
+}
+
+.banner-container{
+    height: 200px;
+    width: 800px;
+    border: 1px solid;
+}
+
+.profile-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profile-item{
+    text-align: center;
+    flex: 1;
+    text-align: -webkit-center;
+
+}
+
+.profile-icon{
+    height: 50px;
+    width: 50px;
+   
+    /* imege icon */
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.profile-1{
+    background-image: url(../fundamental-who4nisa/assets/A.jpg);
+}
+
+.profile-2{
+    background-image: url(../fundamental-who4nisa/assets/B.jpg);
+}
+
+.profile-3{
+    background-image: url(../fundamental-who4nisa/assets/C.jpg);
+}
+
+.divider{
+    flex: 0;
+}

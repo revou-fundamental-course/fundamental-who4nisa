@@ -13,10 +13,10 @@ function validationForm(){
 
     if (firstName && lastName && tanggalLahir){
         document.querySelector('#result').innerHTML = `
-            <p> Nama: ${firstName} ${lastName}</p>
-            <p> Tanggal Lahir: ${tanggalLahir}</p>
-            <p> Jenis Kelamin: ${jenisKelamin}</p>
-            <p> Pesan: ${kirimPesan}</p>
+            <p>Nama: ${firstName} ${lastName}</p>
+            <p>Tanggal Lahir: ${tanggalLahir}</p>
+            <p>Jenis Kelamin: ${jenisKelamin}</p>
+            <p>Pesan: ${kirimPesan}</p>
         `;
     }else{
         alert('Silahkan lengkapi form')
@@ -52,3 +52,4 @@ function showSlide(n){
     console.log(indexSlide + ' ini indexSlide di showSlide');
     listImage[indexSlide].style.display = 'block';
 }
+

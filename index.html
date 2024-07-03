@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: azure;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +8,14 @@
 </head>
 <body>
     <!-- Header Nav -->
-    <header class="nav-container">
+    <header class="nav-container" style="background-color: beige;">
         <div class="logo-icon"></div>
         
         <nav>
             <a href="#home-content">Home</a>
             <a href="#our-profile">Our Profile</a>
             <a>Portofolio</a>
-            <a>Masssage Us</a>
+            <a href="#massage-us">Massage Us</a>
         </nav>
     </header>
 
@@ -23,15 +23,19 @@
 
 <main>
 <!-- Home Content -->
-<section id="home-content">
+<section id="home-content" style="background-color: lightgrey;">
     <header>
-        <h1>Hi User, Welcome to Website</h1>
+        <h1>Hallo, Welcome to Website</h1>
     </header>
 
     <article>
-        <p>Ini adalah Website Portofolio Saya</p>
+        <p>Ini adalah Website Portofolio Anisa</p>
     
-        <div class="banner-container"></div>
+        <div class="banner-container">
+            <div class="banner-item" style="background-image: url(https://picsum.photos/200/300?random=1);"></div>
+            <div class="banner-item" style="background-image: url(https://picsum.photos/200/300?random=2);"></div>
+            <div class="banner-item" style="background-image: url(https://picsum.photos/200/300?random=3);"></div>
+        </div>
     </article>
 </section>
 
@@ -44,17 +48,17 @@
     </header>
 
     <article class="profile-content">
-        <div class="profie-item">
+        <div class="profile-item">
             <div class="profile-icon profile-1"></div>
             <p>Profile 1</p>
         </div>
 
-        <div class="profie-item">
+        <div class="profile-item">
             <div class="profile-icon profile-2"></div>
             <p>Profile 2</p>
         </div>
 
-        <div class="profie-item">
+        <div class="profile-item">
             <div class="profile-icon profile-3"></div>
             <p>Profile 3</p>
         </div>
@@ -70,34 +74,59 @@
 
 
 <!-- Massage Us Content -->
-<section>
+<section id="massage-us">
     <header>
         <h1>Massage Us</h1>
     </header>
 
-    <form >
-        <table>
-            <tr>
-                <td><label for="firstname">Firstname</label></td>
-                <td><input type="text" id="firstname" required></td>
-            </tr>
-            <tr>
-                <td><label for="lastname">Lastname</label></td>
-                <td><input type="text" id="lastname" required></td>
-            </tr>
-            <tr>
-                <td rowspan="2">
-                    <button type="button" onclick="">Submit</button>
-                </td>
-            </tr>
-        </table>
-       
-    </form>
+    <article style="display: flex; justify-content: space-between;">
+        <form >
+            <table>
+                <tr>
+                    <td><label for="firstname">Firstname</label></td>
+                    <td><input type="text" id="firstname" required></td>
+                </tr>
+                <tr>
+                    <td><label for="lastname">Lastname</label></td>
+                    <td><input type="text" id="lastname" required></td>
+                </tr>
+                <tr>
+                    <td><label for="tanggallahir">Tanggal Lahir:</label></td>
+                    <td><input type="date" id="tanggallahir" required></td>
+                </tr>
+                <tr>
+                    <td><label for="jeniskelamin">Jenis Kelamin:</label></td>
+                    <td>
+                        <div class="radio-group">
+                            <input type="radio" id="lakiLaki" name="jenisKelamin" value="Laki-Laki" required>
+                            <label for="lakiLaki">Laki-Laki</label>
+                            <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan" required>
+                            <label for="perempuan">Perempuan</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="kirimpesan">Pesan</label></td>
+                    <td><input type="text" id="kirimpesan" required></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">
+                        <button type="button" onclick="validationForm();">Submit</button>
+                    </td>
+                </tr>
+            </table>
+           
+        </form>
 
-</section>
+        <div id="result" style="border: 1px solid; height: 300px; width: 400px;"></div>
+    
+    
+    </article>
+
+    </section>
 
 </main>
 
-    <script src="fundamental-who4nisa/script.js"></script>
+   <script src="script.js"></script>
 </body>
 </html>

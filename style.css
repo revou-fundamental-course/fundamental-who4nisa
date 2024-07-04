@@ -26,11 +26,11 @@ nav>a{
 
 .banner-container{
     height: 200px;
-    width: 800px;
+    width: 500px;
     border: 1px solid;
-    background-image: url(https://picsum.photos/200/300?random=1);
-    background-image: url(https://picsum.photos/200/300?random=2);
-    background-image: url(https://picsum.photos/200/300?random=3);
+    background-image: url(https://picsum.photos/200/500?random=1);
+    background-image: url(https://picsum.photos/200/500?random=2);
+    background-image: url(https://picsum.photos/200/500?random=3);
 }
 
 .profile-content{
@@ -74,3 +74,17 @@ nav>a{
         flex-direction: column;
     }
 }
+
+.result-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row; /* Default flex direction */
+}
+
+@media only screen and (max-width: 610px){
+    .result-box{
+        flex-direction: column;
+    }
+}
+
